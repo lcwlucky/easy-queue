@@ -5,10 +5,11 @@
   "main": "lib/index.js",
   "module": "es/index.js",
   "scripts": {
-    "build": "yarn clean && rollup -c",
+    "build": "pnpm clean && rollup -c",
     "clean": "rimraf lib es",
     "test": "jest",
-    "lint": "tsc && eslint --ext .ts src"
+    "lint": "tsc && eslint --ext .ts src",
+    "release": "pnpm build && npm publish"
   },
   "repository": {
     "type": "git",
