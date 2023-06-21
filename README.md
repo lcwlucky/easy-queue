@@ -1,4 +1,6 @@
-# smile-queue
+# smile-queue 
+[![](https://img.shields.io/bundlephobia/minzip/smile-queue?label=bundle%20size)](https://bundlephobia.com/package/smile-queue) [![Version](https://img.shields.io/npm/v/smile-queue)](https://www.npmjs.com/package/zustand) [![Downloads](https://img.shields.io/npm/dt/smile-queue.svg)](https://www.npmjs.com/package/smile-queue)
+
 micro and efficient queue
 
 You should use this package instead of an array if you do a lot of `Array#push()` and `Array#shift()` on large arrays, since `Array#shift()` has [linear time complexity](https://medium.com/@ariel.salem1989/an-easy-to-use-guide-to-big-o-time-complexity-5dcf4be8a444#:~:text=O(N)%E2%80%94Linear%20Time) *O(n)* while `Queue#dequeue()` has [constant time complexity](https://medium.com/@ariel.salem1989/an-easy-to-use-guide-to-big-o-time-complexity-5dcf4be8a444#:~:text=O(1)%20%E2%80%94%20Constant%20Time) *O(1)*. That makes a huge difference for large arrays.
@@ -16,9 +18,9 @@ $ pnpm install smile-queue
 ## Usage
 
 ```js
-import EasyQueue from 'smile-queue';
+import SmileQueue from 'smile-queue';
 
-const queue = new Queue();
+const queue = new SmileQueue();
 
 queue.enqueue('🍊');
 queue.enqueue('🍎');
@@ -38,7 +40,7 @@ console.log(queue.dequeue());
 
 ## API
 
-### `queue = new EasyQueue()`
+### `queue = new SmileQueue()`
 
 The instance is an [`Iterable`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols), which means you can iterate over the queue front to back with a "for…of" loop, or use spreading to convert the queue to an array. Don't do this unless you really need to though, since it's slow.
 

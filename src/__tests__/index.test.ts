@@ -1,7 +1,7 @@
-import EasyQueue from '..';
+import SmileQueue from '..';
 
 it('.enqueue()', () => {
-  const queue = new EasyQueue();
+  const queue = new SmileQueue();
   queue.enqueue('🍊');
   expect(queue.dequeue()).toBe('🍊');
   queue.enqueue('🍊');
@@ -11,7 +11,7 @@ it('.enqueue()', () => {
 });
 
 it('.dequeue()', () => {
-  const queue = new EasyQueue();
+  const queue = new SmileQueue();
   expect(queue.dequeue()).toBe(undefined);
   expect(queue.dequeue()).toBe(undefined);
   queue.enqueue('🍎');
@@ -20,7 +20,7 @@ it('.dequeue()', () => {
 });
 
 it('.clear()', () => {
-  const queue = new EasyQueue();
+  const queue = new SmileQueue();
   queue.clear();
   queue.enqueue('🍊');
   queue.clear();
@@ -33,7 +33,7 @@ it('.clear()', () => {
 });
 
 it('.size', () => {
-  const queue = new EasyQueue();
+  const queue = new SmileQueue();
   expect(queue.size).toBe(0);
   queue.clear();
   expect(queue.size).toBe(0);
@@ -50,7 +50,7 @@ it('.size', () => {
 });
 
 it('iterable', () => {
-  const queue = new EasyQueue();
+  const queue = new SmileQueue();
   queue.enqueue('🍎');
   queue.enqueue('🍊');
   expect([...queue]).toEqual(['🍎', '🍊']);
