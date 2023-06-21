@@ -1,11 +1,7 @@
-/** @type {import('@ts-jest/dist/types').InitialOptionsTsJest} */
 module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'node',
-  testMatch: [
-    '**/__tests__/**/*.(spec|test).[jt]s?(x)',
-    '**/*.+(spec|test).[tj]s?(x)',
-  ],
+  testMatch: ['**/__tests__/**/*.test.ts'],
   transform: {
     '^.+\\.ts$': require.resolve('ts-jest'),
   },

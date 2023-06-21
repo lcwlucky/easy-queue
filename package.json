@@ -1,5 +1,5 @@
 {
-  "name": "easy-queue",
+  "name": "smile-queue",
   "version": "0.0.1",
   "description": "micro and efficient queue",
   "main": "lib/index.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lcwlucky/easy-queue.git"
+    "url": "https://github.com/lcwlucky/smile-queue.git"
   },
   "files": [
     "lib",

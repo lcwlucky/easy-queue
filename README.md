@@ -1,4 +1,4 @@
-# easy-queue
+# smile-queue
 micro and efficient queue
 
 You should use this package instead of an array if you do a lot of `Array#push()` and `Array#shift()` on large arrays, since `Array#shift()` has [linear time complexity](https://medium.com/@ariel.salem1989/an-easy-to-use-guide-to-big-o-time-complexity-5dcf4be8a444#:~:text=O(N)%E2%80%94Linear%20Time) *O(n)* while `Queue#dequeue()` has [constant time complexity](https://medium.com/@ariel.salem1989/an-easy-to-use-guide-to-big-o-time-complexity-5dcf4be8a444#:~:text=O(1)%20%E2%80%94%20Constant%20Time) *O(1)*. That makes a huge difference for large arrays.
@@ -8,15 +8,15 @@ You should use this package instead of an array if you do a lot of `Array#push()
 ## Install
 
 ```
-$ npm install easy-queue
-$ yarn add easy-queue
-$ pnpm install easy-queue
+$ npm install smile-queue
+$ yarn add smile-queue
+$ pnpm install smile-queue
 ```
 
 ## Usage
 
 ```js
-import EasyQueue from 'easy-queue';
+import EasyQueue from 'smile-queue';
 
 const queue = new Queue();
 
