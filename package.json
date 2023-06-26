@@ -10,6 +10,9 @@
     "clean": "rimraf lib es types",
     "test": "jest",
     "lint": "tsc --noEmit && eslint --ext .ts src",
+    "patch-version": "npm version patch",
+    "minor-version": "npm version minor",
+    "major-version": "npm version major",
     "release": "pnpm build && npm publish"
   },
   "repository": {
