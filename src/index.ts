@@ -2,12 +2,10 @@ class NodeItem {
   constructor(public value: any, public next: NodeItem | null = null) {}
 }
 
-class EasyQueue {
-  constructor(
-    private head: NodeItem | null = null,
-    private tail: NodeItem | null = null,
-    private _size = 0
-  ) {}
+class SmileQueue {
+  private head: NodeItem | null = null;
+  private tail: NodeItem | null = null;
+  private _size = 0;
 
   enqueue(value: any) {
     const node = new NodeItem(value);
@@ -49,5 +47,5 @@ class EasyQueue {
   }
 }
 
-export default EasyQueue;
-export { EasyQueue };
+export default SmileQueue;
+export { SmileQueue };

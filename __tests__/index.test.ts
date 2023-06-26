@@ -1,4 +1,4 @@
-import SmileQueue from '..';
+import SmileQueue from '../src';
 
 it('.enqueue()', () => {
   const queue = new SmileQueue();
